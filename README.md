@@ -1,2 +1,3 @@
-# twitter-bot
-A twitter bot for full on twitter engagement and activities.
+# X-hexa-bot
+
+An X bot for full on twitter engagement and activities.

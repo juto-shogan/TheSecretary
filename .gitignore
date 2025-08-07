@@ -13,3 +13,4 @@ env/
 
 # python cache
 __pycache__/
+app/utils/__pycache__/

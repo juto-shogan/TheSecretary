@@ -1,0 +1,17 @@
+2025-08-08 22:16:49,353 [INFO] x-bot: Starting FastAPI server for GitHub Webhooks...
+2025-08-09 00:20:04,484 [INFO] x-bot: Starting FastAPI server for GitHub Webhooks...
+2025-08-09 01:26:34,477 [INFO] x-bot: Starting Telegram bot (polling)...
+2025-08-09 01:26:35,575 [INFO] telegram.ext.Application: Application started
+2025-08-09 01:32:11,816 [ERROR] x-bot: Failed to add webhook: {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
+2025-08-09 01:32:37,462 [ERROR] telegram.ext.Application: No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/juto/Desktop/TheSecretary/.venv/lib/python3.12/site-packages/telegram/ext/_application.py", line 1124, in process_update
+    await coroutine
+  File "/home/juto/Desktop/TheSecretary/.venv/lib/python3.12/site-packages/telegram/ext/_handler.py", line 141, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/juto/Desktop/TheSecretary/app/telegram_bot.py", line 56, in monitor_command
+    await update.message.reply_text("Invalid repo format. Use owner/repo")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'reply_text'
+2025-08-09 01:58:58,566 [ERROR] x-bot: Failed to add webhook: {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}

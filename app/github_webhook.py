@@ -27,10 +27,10 @@ async def github_webhook(
         message = handle_pr_event(payload)
 
     else:
-        message = f"Unhandled event type: {x_github_event}"
+        message = f"⚠️ Unhandled event type: {x_github_event}"
         log.info(message)
 
-    # Send update to Telegram
+    # Send the compact message to Telegram
     send_telegram_message(message)
 
     return {"status": "ok", "message": message}
